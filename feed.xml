@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>네일 이로하 - 압구정네일샵</title>
+    <link>http://nailiroha.com</link>
+    <description>빛나는 색을 입혀드립니다 - 1:1시술 압구정네일샵, 압구정네일, 압구정네일전문</description>
+    <language>ko</language>
+    <pubDate>Wed, 17 May 2017 19:54:15 +0900</pubDate>
+    <generator>Jekyll v3.2.1</generator>
+    <managingEditor>네일 이로하~빛을 입혀드려요</managingEditor>
+
+    <item>
+      <title>네일 이로하~빛을 입혀드려요</title>
+      <link>http://nailiroha.com/</link>
+
+      	<description>
+          &lt;p&gt;빛을 입혀드립니다!&lt;br /&gt;
+          일상의 소소함에서 소중하게 간직하고 싶은 순간까지,
+          모든 순간에 찬란할 빛. 네일 이로하&lt;br /&gt;
+        </description>
+
+       <category>posts/</category>
+      <guid>http://nailiroha.com//</guid>
+      <pubDate>Thu, 13 Oct 2016 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

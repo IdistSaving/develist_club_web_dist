@@ -1,0 +1,28 @@
+<div class="w-100D3">
+  <div class="w-100 d-n-X500">
+    <div class="w-100_15px-N1000 pt-100_15px-N1000 mt-15px-N1000 w-100_5px-N500X1000 pt-100_5px-N500X1000 mt-5px-N500X1000" ng-class="[
+    {'f-l':gallery_index%3==0},
+    {'cen-x':gallery_index%3==1},
+    {'f-r':gallery_index%3==2}]">
+      <div class="p-a t-0 l-0 w-100 h-100 bor-3px">
+        <img class="w-100 h-100 bor-3px b-img z-1" ng-src="{{data['gallery_image'+(index+1)]}}" />
+        <button class="p-a t-0 l-0 w-100 h-100 z-2" ng-if="$root.state.current.name=='landing/admin'"
+        ng-mouseenter="hover_galleryImage=true;" ng-mouseleave="hover_galleryImage=false;"
+        ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="false" ngf-select="changeGalleryImage($file, data, index);">
+          <div class="p-a t-0 l-0 w-100 h-100 bor-3px z-1" ng-class="[{'b-bk o-50':hover_galleryImage}]"></div>
+          <div class="p-a cen z-2" ng-show="hover_galleryImage">
+            <i class="f-60px lh-62px c-we ion-images"></i>
+            <span class="t-c w-100 mt-15px c-we f-18px lh-20px t-c">이미지 변경</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 d-n-N500">
+    <div class="w-100 pt-100">
+      <div class="p-a t-0 l-0 w-100 h-100">
+        <img class="w-100 h-100 b-img" ng-src="{{data['gallery_image'+(index+1)]}}" />
+      </div>
+    </div>
+  </div>
+</div>

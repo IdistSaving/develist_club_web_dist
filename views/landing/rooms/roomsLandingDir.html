@@ -1,0 +1,19 @@
+<div class="w-100">
+    <img class="p-a t-0 l-0 w-100 h-100 b-img z-1" ng-src="{{data_get.room_cover_image}}" />
+    <div class="p-a t-0 l-0 w-100 h-100 b-bk o-90 z-2" ng-class="[{'b-bk o-50':roomsCover_hover||!($root.state.current.name=='landing/admin')}]"></div>
+    <!-- Edit Cover Image -->
+    <div class="p-a b-0 r-0 z-4 d-n-X500" ng-show="$root.state.current.name=='landing/admin'">
+      <div class="f-r mb-30px mr-45px">
+        <div class="w-110px h-40px" ng-class="[{'o-50':!roomsCover_hover}]" ng-mouseenter="roomsCover_hover=true;" ng-mouseleave="roomsCover_hover=false;">
+          <button class="w-100 h-100" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="false" ngf-select="changeRoomsImage($file);">
+            <i class="p-a l-0 f-19px lh-21px c-we ion-image"></i>
+            <span class="p-a r-0 f-17px lh-21px c-we">이미지 변경</span>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 h-100 pb-120px z-3">
+      <section-title-dir section="'ROOM'"></section-title-dir>
+      <room-rooms-landing-dir class="w-100_200px-N1000 w-100_30px-X500 mt-60px-N500 mt-39px-X500 cen-x"
+       ng-repeat="(room_index, room) in $root._.range(5)"></room-rooms-landing-dir>
+    </div>
+</div>

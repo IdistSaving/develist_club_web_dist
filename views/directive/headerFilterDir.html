@@ -1,0 +1,25 @@
+<div class="p-f t-0 l-0 w-100">
+  <div class="p-a t-0 l-0 w-100 h-100 b-bk o-90 z-1"></div>
+  <div class="p-a t-0 l-0 w-100 h-100 z-2">
+    <div class="w-100 h-70px pl-18px pr-18px d-n-N500">
+      <button class="f-r w-36px h-36px bo-1px bo-we bor-5px cen-y" ng-click="clickHeader();">
+        <i class="lh-36px f-21px c-we ion-android-close"></i>
+      </button>
+    </div>
+  </div>
+  <logo-dir class="p-a t-60D667M100 w-210D375M100 cen-x z-3"></logo-dir>
+  <div class="p-a w-100 cen-y z-3">
+    <div class="w-100 h-30px" ng-repeat="(headerScrollItem_index, headerScrollItem) in headerScrollItems track by headerScrollItem_index"
+    ng-class="[{'mt-45px':!$first}]" ng-click="clickToScroll(headerScrollItem_index);">
+      <span class="t-c w-100 f-24px c-we-H c-767579">{{headerScrollItem.text}}</span>
+    </div>
+  </div>
+  <div class="p-a t-555D667M100 w-100 z-3">
+    <div class="w-100" ng-repeat="(headerContent_index, headerContent) in headerContents track by headerContent_index" ng-class="[{'mt-15px':!$first}]">
+      <div class="w-100px h-20px">
+        <span class="t-r w-100 o-50 lh-15px-N1000 f-12px-N1000 c-we cen-y">{{headerContent.name}}</span>
+      </div>
+      <span class="w-100_120px ml-20px f-15px lh-17px c-we o-50">{{headerContent.text}}</span>
+    </div>
+  </div>
+</div>

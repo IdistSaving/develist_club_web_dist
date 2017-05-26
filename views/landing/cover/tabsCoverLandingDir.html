@@ -1,0 +1,10 @@
+<div class="w-100">
+  <div class="cen-x">
+    <div class="h-34px" ng-repeat="(tab_index, tab) in [
+    {title:'GALLERY'}, {title:'ROOM'}, {title:'RESERVATION'}, {title:'CONTACT'}
+    ] track by tab_index">
+      <tab-cover-landing-dir></tab-cover-landing-dir>
+      <div class="w-3px h-15px b-we bs-0_5_5_bk_50 cen-y" ng-if="!$last"></div>
+    </div>
+  </div>
+</div>

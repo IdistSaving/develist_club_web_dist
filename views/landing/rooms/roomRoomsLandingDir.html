@@ -1,0 +1,17 @@
+<div class="w-100">
+  <div class="w-90-N500X1000 w-100-N1000 d-n-X500 cen-x">
+    <images-room-rooms-landing-dir class="w-500D1050M100"
+    ng-class="[
+    {'f-l':room_index%2==0}, {'f-r':room_index%2==1}
+    ]"></images-room-rooms-landing-dir>
+    <details-room-rooms-landing-dir class="p-a w-500D1050M100 h-100"
+    ng-class="[
+    {'r-0':room_index%2==0}, {'l-0':room_index%2==1}
+    ]"></details-room-rooms-landing-dir>
+  </div>
+  <div class="w-100 d-n-N500">
+    <name-detail-room-rooms-landing-dir index="room_index" data="data_get"></name-detail-room-rooms-landing-dir>
+    <images-room-rooms-landing-dir></images-room-rooms-landing-dir>
+    <explain-detail-room-rooms-landing-dir index="room_index" data="data_get"></explain-detail-room-rooms-landing-dir>
+  </div>
+</div>

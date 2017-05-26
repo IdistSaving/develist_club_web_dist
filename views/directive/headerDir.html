@@ -1,0 +1,24 @@
+<div class="p-f t-0 l-0 w-100" ng-show="!($root.state.current.name=='landing/admin')">
+  <header-filter-dir class="p-f w-100 h-100vh z-3" ng-show="header_filter" header-contents="headerContents" click-header="clickHeader"></header-filter-dir>
+  <div class="w-100 h-70px pl-18px pr-18px d-n-N500">
+    <div class="p-a t-0 l-0 w-100 h-100 z-1" ng-class="[{'o-80 b-bk bo-we bo_b-1px':!($root.scrollTop<cover_height)}]"></div>
+    <div class="f-l w-120px cen-y z-2">
+      <logo-dir ng-show="!header_filter"></logo-dir>
+    </div>
+    <button class="f-r w-36px h-36px bo-1px bo-we bor-5px cen-y z-2" ng-click="clickHeader();">
+      <i class="lh-36px f-21px c-we ion-android-menu" ng-show="!header_filter"></i>
+    </button>
+  </div>
+  <div class="w-100 h-60px d-n-X1000">
+    <!-- Filter -->
+    <!-- <span class="f-50px c-we">{{cover_height}}</span>
+    <span class="f-50px c-we">{{$root.scrollTop}}</span> -->
+    <div class="p-a t-0 l-0 w-100 h-100 z-1" ng-class="[{'o-80 b-bk bo-we bo_b-1px':!($root.scrollTop<cover_height)}]"></div>
+    <div class="cen z-2">
+      <div class="h-60px" ng-repeat="(contact_index, contact) in headerContents track by contact_index">
+        <span class="f-18px cen-y c-we" ng-class="[{'pl-100px':!$first}]">
+        {{contact.name}}&nbsp;&nbsp;&nbsp;{{contact.text}}</span>
+      </div>
+    </div>
+  </div>
+</div>

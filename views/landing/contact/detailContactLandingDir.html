@@ -1,0 +1,20 @@
+<div class="w-1000px mt-60px-N1000 mt-20px-X1000 cen-x">
+  <div class="d-n-X1000 cen-x">
+    <div class="w-100px h-40px">
+      <span class="t-r w-100 o-50 lh-30px-N1000 f-24px-N1000 c-we cen-y" ng-show="index==0">위치</span>
+      <span class="t-r w-100 o-50 lh-30px-N1000 f-24px-N1000 c-we cen-y" ng-show="index==1">연락처</span>
+      <span class="t-r w-100 o-50 lh-30px-N1000 f-24px-N1000 c-we cen-y" ng-show="index==2">카카오톡</span>
+    </div>
+    <span class="w-500px ml-15px f-30px h-40px lh-35px c-we" ng-show="!($root.state.current.name=='landing/admin')">{{data[field]}}</span>
+    <input class="w-500px ml-15px p-5px h-40px f-30px lh-35px c-we pc-E0E0E0 bo_b-1px d-n-X500" ng-show="$root.state.current.name=='landing/admin'" ng-model="data[field]"></input>
+  </div>
+  <div class="d-n-N1000 cen">
+    <div class="w-70px h-40px">
+      <span class="t-r w-100 o-50 f-15px-X500 f-18px-N500X1000 lh-18px-X500 lh-21px-N1000 c-we cen-y" ng-show="index==0">위치</span>
+      <span class="t-r w-100 o-50 f-15px-X500 f-18px-N500X1000 lh-18px-X500 lh-21px-N1000 c-we cen-y" ng-show="index==1">연락처</span>
+      <span class="t-r w-100 o-50 f-15px-X500 f-18px-N500X1000 lh-18px-X500 lh-21px-N1000 c-we cen-y" ng-show="index==2">카카오톡</span>
+    </div>
+    <span class="w-280px h-40px p-8px-N500X1000 p-11px-X500 f-15px-X500 f-18px-N500X1000 lh-18px-X500 lh-24px-N500X1000 c-we" ng-show="!($root.state.current.name=='landing/admin')">{{data[field]}}</span>
+    <input class="w-200px ml-15px pl-15px pr-15px h-40px f-15px lh-19px c-we pc-E0E0E0 bo_b-1px" ng-show="$root.state.current.name=='landing/admin'" ng-model="data[field]"></input>
+  </div>
+</div>

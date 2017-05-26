@@ -1,0 +1,11 @@
+<div class="w-100">
+  <div class="w-100 cen-x" ng-class="[{'bo-1px bor-10px':($root.state.current.name=='landing/admin')}]">
+    <div class="w-100 d-n-X500">
+      <span class="t-c w-100 f-42px-N1000 f-30px-N500X1000 lh-50px-N1000 lh-34px-N500X1000 ts-0_0_7__we_75 c-we ls-1px" ng-show="!($root.state.current.name=='landing/admin')">{{data['room_title'+(index+1)]}}</span>
+      <input class="t-c w-100 h-84px pl-15px pr-15px f-42px-N1000 f-30px-N500X1000 lh-60px-N500X1000 lh-84px-N1000 c-we pc-E0E0E0" ng-show="$root.state.current.name=='landing/admin'" style="font-family: 'Impact', sans-serif;" ng-model="data['room_title'+(index+1)]"></input>
+    </div>
+    <div class="w-100 d-n-N500">
+      <span class="t-c w-100 f-30px ts-0_0_7__we_75 c-we ls-1px">{{data['room_title'+(index+1)]}}</span>
+    </div>
+  </div>
+</div>

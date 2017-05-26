@@ -1,0 +1,15 @@
+<div class="w-100">
+  <div class="w-100 pt-100">
+    <div class="p-a t-0 l-0 w-100 h-100">
+      <img class="w-100 h-100 bor-3px b-img" ng-src="{{data['room_image'+(index+1)]}}" />
+      <button class="p-a t-0 l-0 w-100 h-100 z-2 d-n-X500" ng-if="$root.state.current.name=='landing/admin'" ng-mouseenter="hover_roomImage=true;" ng-mouseleave="hover_roomImage=false;"
+      ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="false" ngf-select="changeRoomImage($file, data, index);">
+        <div class="p-a t-0 l-0 w-100 h-100 bor-3px z-1" ng-class="[{'b-bk o-50':hover_roomImage}]"></div>
+        <div class="p-a cen z-2" ng-show="hover_roomImage">
+          <i class="f-60px lh-62px c-we ion-images"></i>
+          <span class="t-c w-100 mt-15px c-we f-18px lh-20px t-c">이미지 변경</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="w-100">
+  <div class="w-100 h-100vh">
+    <!-- 1200px 에서 깨짐 -->
+    <img class="p-a t-0 l-0 w-100 h-100 b-img z-1" ng-src="{{data_get.cover_image}}" />
+    <div class="p-a t-0 l-0 w-100 h-100 z-2" ng-class="[{'b-bk o-50':mainCover_hover||!($root.state.current.name=='landing/admin')}]"></div>
+    <!-- Edit Cover Image -->
+    <div class="p-a b-0 r-0 z-4 d-n-X500"  ng-show="$root.state.current.name=='landing/admin'">
+      <div class="f-r mb-30px mr-45px">
+        <div class="w-110px h-40px" ng-class="[{'o-50':!mainCover_hover}]" ng-mouseenter="mainCover_hover=true;" ng-mouseleave="mainCover_hover=false;">
+          <button class="w-100 h-100" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="false" ngf-select="changeCoverImage($file);">
+              <i class="p-a l-0 f-19px lh-21px c-we ion-image"></i>
+              <span class="p-a r-0 f-17px lh-21px c-we">이미지 변경</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 h-100vh z-3">
+      <div class="w-100 cen-y">
+        <logo-dir class="w-200D375M100 cen-x z-2"></logo-dir>
+        <tabs-cover-landing-dir class="w-100 mt-120px d-n-X1000 z-1"></tabs-cover-landing-dir>
+      </div>
+      <button-cover-landing-dir class="p-a b-0 w-100 h-300D1080M100 d-n-X500 z-2"></button-cover-landing-dir>
+      <div class="p-a b-0 w-100 z-1" style="
+      width:100%;
+      height:120px;
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089fff1', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+      ">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="w-100">
+  <!-- Logo Image -->
+  <div class="w-100 pt-20 z-1">
+    <img class="p-a t-0 l-0 w-100 h-100" ng-src="{{cover_logo}}" />
+  </div>
+  <button class="p-a t-0 l-0 w-100 h-100 z-2 d-n-X500 z-2" ng-show="$root.state.current.name=='landing/admin'" ng-mouseenter="hover_logo=true;" ng-mouseleave="hover_logo=false;"
+  ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="false" ngf-select="changeLogoImage($file);">
+  <!-- Filter -->
+  <div class="p-a t-0 l-0 w-100 h-100" ng-class="[{'b-bk o-50':hover_logo}]"></div>
+    <div class="p-a cen" ng-show="hover_logo">
+      <i class="f-60px lh-62px c-we ion-image"></i>
+      <span ng-show="kakaoLogin" class="t-c w-100 f-18px lh-32px c-we">이미지 변경</span>
+    </div>
+  </button>
+</div>
